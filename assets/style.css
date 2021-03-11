@@ -1,0 +1,110 @@
+body{
+    background-color: #7ed6df;
+    font-family: 'Redressed', cursive;
+}
+header{
+    background-color: #b3ebf0;
+    padding: 3px;
+}
+.titulo{
+    padding-top: 5px;
+    font-family: 'Redressed', cursive;
+    color: rgb(7, 16, 54);
+    text-align: center;
+    font-size: 80px;
+}
+.mundo{
+    width: 6%;
+    padding-left: 630px;
+    
+}
+#menu li{
+    display:inline;
+    font-size: 18px;
+    padding: 10px 10px;
+    
+}
+#menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(6, 13, 53);
+    font-weight: bold;
+}
+#menu li a:hover{
+    color: rgb(42, 97, 114);
+}
+.bemvindo{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 20px;
+    color: rgb(1, 1, 44) 
+}
+.p1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.sobre{
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 200px;
+}
+.justify{
+    text-align: justify;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 50px;
+    font-family: 'Lora', serif;
+    margin: 50px
+}
+.imagem{
+    border-radius: 40%;
+    padding: 30px;
+}
+.input-padrao{
+    display:list-item;
+    padding: 10px 25px;
+    width: 50%;
+    padding-left: 15px;
+}
+.contato{
+    margin-left: 20px;
+}
+.enviar{
+    margin-top: 15px;
+    width: 20%;
+    padding: 15px 0;
+    background-color:rgb(6, 13, 53);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background:#4834d4;
+    transform:scale(1.1);
+}
+footer{
+    text-align: center;
+    background: #22a6b3;
+    padding: 10px;
+}
+.copyright{
+    color: white;
+    font-size: 20px;
+
+}
+.tm-social{
+   width: 50px;
+   height: 50px;
+   padding: 0 30px
+}
