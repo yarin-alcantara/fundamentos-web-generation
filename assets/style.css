@@ -67,11 +67,15 @@ header{
     border-radius: 40%;
     padding: 30px;
 }
+.itens{
+    font-size: 22px; 
+}
 .input-padrao{
     display:list-item;
     padding: 10px 25px;
     width: 50%;
     padding-left: 15px;
+    
 }
 .contato{
     margin-left: 20px;
