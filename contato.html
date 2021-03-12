@@ -20,20 +20,17 @@
     <div class="contato">
         <h1>Entre em contato</h1>
         <form>
-            <label for="nomesobrenome"><strong>Nome</strong></label>
-            <input type="text" id="nome" class="input-padrao" required>
-
-            <label for="email"><strong>Email</strong></label>
-            <input type="email" id="email" class="input-padrao" required 
+            <label for="nomesobrenome" class="itens"><strong>Nome</strong></label>
+            <input type="text" id="nome" class="input-padrao" onkeyup="validaNome()" required>
+            <div id="txtNome"></div>
+            <label for="email" class="itens"><strong>Email</strong></label>
+            <input type="email" id="email" class="input-padrao" onkeyup="validaEmail()" required 
             placeholder="seuemail@dominio.com">
-
-            <label for="telefone"><strong>Telefone</strong></label>
-            <input type="text" id="telefone" class="input-padrao" required placeholder="(DDD) XXXXX-XXXX">
-
-            <label for="tel"><strong>Mensagem</strong></label>
-            <textarea cols="60" rows="2" id="mensagem" class="input-padrao"></textarea required>
-            
-            <input type="submit" value="Enviar" class="enviar">
+            <div id="txtEmail"></div>
+            <label for="mensagem" class="itens"><strong>Mensagem</strong></label>
+            <textarea cols="60" rows="2" id="mensagem" class="input-padrao" onkeyup="validaMensagem()"></textarea required>
+            <div id="txtMensagem"></div>
+            <input type="submit" value="Enviar" class="enviar" onclick="enviar()">
     
         </form>
     </div>
@@ -44,7 +41,8 @@
         1m12!1m3!1d59879.01656362245!2d-40.32072336630422!3d-20.28210755952334
         !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5d85374ee9%3A0x
         97595e7ea70ed809!2zVml0w7NyaWEsIEVT!5e0!3m2!1spt-BR!2sbr!4v1615496871023!5m2!1spt-BR!
-        2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()"
+        onmouseout="mapaNormal()" id="mapa"></iframe>
     </div>
     <footer>
 
@@ -66,5 +64,6 @@
         <p class="copyright">&copy; Copyright Yarin Lemos de Alcantara - 2021</p>
         
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
